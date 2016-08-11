@@ -1,0 +1,9 @@
+<div class="main-container" infinite-scroll (scrolled)="loadMore()">
+    <div class="image-container" *ngFor="let wallpaper of wallpaperListing.wallpapers">
+        <img src="{{ wallpaper.previewUrl }}" class="image-item" />
+        <div class="actions">
+            <button class="btn" (click)="open(wallpaper.url)"><i class="material-icons">open_in_new</i></button>
+        </div>
+    </div>
+    <div *ngIf="error" class="image-container load-more">There was an error connecting to reddit. Please try again later.</div>
+</div>
