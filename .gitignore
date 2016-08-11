@@ -7,5 +7,5 @@
 /*.sublime-workspace
 .idea/
 typings
-app/**/*.js
-app/**/*.map
+src/**/*.js
+src/**/*.map
