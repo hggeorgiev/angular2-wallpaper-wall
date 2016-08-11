@@ -5,4 +5,7 @@
 /dist
 /bower_components
 /*.sublime-workspace
-/.idea
+.idea/
+typings
+app/**/*.js
+app/**/*.map
